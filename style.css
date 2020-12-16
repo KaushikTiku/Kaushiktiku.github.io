@@ -103,7 +103,7 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  max-width: 83.986vw;
+  width: 83.986vw;
   height: 50%;
 }
 
@@ -221,18 +221,20 @@ nav {
 
 
 .main_buttons a {
-  margin: 12vh 2vw;
-
+  margin: 6vh 2vw;
   display: inline-block;
-  padding: 1.2em 1.5em;
+  height: 3.5em;
+  width: 10em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 3.5em; 
+
   text-decoration: none;
   font-size: 1em;
   border-radius: 1.5em;
-  box-shadow: -0.1vw -0.1vw 8px rgba(255, 255, 255, 1),
-    -0.1vw -0.1vw 0.12vw rgba(255, 255, 255, 0.5),
-    inset 0.1vw 0.1vw 0.4vw rgba(255, 255, 255, 0.1),
-    0.1vw 1vw 0.8vw rgba(0, 0, 0, 0.15);
+  box-shadow: -3px -3px 15px rgba(255, 255, 255, 1), 4px 4px 15px rgba(0, 0, 0, 0.1);
 }
+
 .main_buttons a span {
   font-weight: 900;
   font-family: Vesterbro, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -240,28 +242,20 @@ nav {
   letter-spacing: 0.1vw;
 }
 .main_buttons .About_me_btn {
-  color: white;
+  color: #254c5f;
 }
 
 .main_buttons .Know_More_btn {
-  color: rgb(15, 17, 8);
-  background-color: white;
+  color: #254c5f;
   font-weight: bolder;
 }
 .main_buttons a:hover {
-  transition: 0.8s ease-in-out 0.8s;
-  box-shadow: inset -0.1vw -0.1vw 8px rgba(255, 255, 255, 1),
-    inset -0.1vw -0.1vw 0.12vw rgba(255, 255, 255, 0.5),
-    inset 0.1vw 0.1vw 0.4vw rgba(255, 255, 255, 0.1),
-    inset 0.1vw 0.1vw 0.8vw rgba(0, 0, 0, 0.15);
+  transform: scale(1.03);
+  
+   box-shadow: inset -8px -8px 10px rgba(255, 255, 255, 0.5),
+  inset 4px 4px 10px rgba(0, 0, 0, 0.1);
 }
-.main_buttons .Know_More_btn:hover {
-  transition: 0.8s ease-in-out 0.8s;
-  box-shadow: inset -0.1vw -0.1vw 8px rgba(15, 17, 8, 1),
-    inset -0.1vw -0.1vw 0.12vw rgba(15, 17, 8, 0.5),
-    inset 0.1vw 0.1vw 0.4vw rgba(15, 17, 8, 0.1),
-    inset 0.1vw 0.1vw 0.8vw rgba(255, 252, 252, 0.15);
-}
+
 
 @keyframes tag_line {
   0% {
@@ -366,17 +360,20 @@ justify-content: center;
 }
 
 .About .title span:after {
-  width: 34vw;
-  right: -34vw;
+  width: 33vw;
+  right: -33vw;
 }
 
 .About .title span:before {
-  width: 34vw;
-  left: -34vw;
+  width: 33vw;
+  left: -33vw;
 }
 
 .profile {
   flex: 1;
+  
+  width: 100%;
+  height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -407,10 +404,8 @@ justify-content: center;
 
 .profile-content .long p:first-letter{
   display:block;
-  float:left;
-  margin:3px;
   
-  font-size:300%;
+  font-size:180%;
 }
 
 .profile p,
@@ -428,7 +423,7 @@ h2 {
   position: relative;
   top: 1vh;
   color: #254c5f;
-  font-size: 2vw;
+  font-size: 2.5vw;
   opacity: 0.8;
   line-height: 1em;
 }
@@ -459,10 +454,10 @@ h2 {
   text-align: start;
   display: grid;
 
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
+  grid-template-columns: 1.8fr 1.2fr;
+  grid-gap: 0.8em;
   grid-auto-flow: column;
-margin:0 25vw 0 35vw;
+margin:0 25vw ;
  margin-bottom: 2em;
 }
 
@@ -470,12 +465,12 @@ margin:0 25vw 0 35vw;
 
 .profile-content h2 {
   font-size: 1.65em;
-
+text-align: center;
   line-height: 1.75em;
 }
 .profile-content ul {
   list-style: none;
-  margin: 0 0 1em 0;
+  margin: 0 0 1em 1.4em;
 }
 
 .profile-content li:before {
@@ -487,9 +482,10 @@ margin:0 25vw 0 35vw;
 }
 
 .profile-content .Know_More_btn {
-  background-color: #254c5f;
-  color: #efefef;
-  margin: 0;
+width: 8em;
+
+margin: 0 0 3em 1em;
+
 }
 
 /* about me section ends here */
@@ -522,13 +518,13 @@ justify-content: center;
 }
 
 .motto .title span:after {
-  width: 25.2vw;
-  right: -25.2vw;
+  width: 26.5vw;
+  right: -26.5vw;
 }
 
 .motto .title span:before {
-  width: 25.2vw;
-  left: -25.2vw;
+  width: 26.5vw;
+  left: -26.5vw;
 }
 
 .motto-container-box {
@@ -697,6 +693,7 @@ justify-content: center;
 
 /* Knowledge or parallax section */
 
+
 .Parallax {
   height: 100%;
  width: auto;
@@ -716,13 +713,13 @@ justify-content: center;
 }
 
 .Parallax .title span:after {
-  width: 22.2vw;
-  right: -22.2vw;
+  width: 24vw;
+  right: -24vw;
 }
 
 .Parallax .title span:before {
-  width: 22.2vw;
-  left: -22.2vw;
+  width: 24vw;
+  left: -24vw;
 }
 
 .Parallax .container {
@@ -956,7 +953,6 @@ justify-content: center;
 /* Footer starts here  */
 footer {
   position: relative;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)); */
   background-color: #efefef;
   bottom: 0;
   z-index: 2;
@@ -971,7 +967,6 @@ footer {
   height: 5em;
   margin: 0.25em 1.2em;
   border-radius: 30%;
-  /* box-shadow: 0 0.3em 1em -0.3em #00000070; */
   box-shadow: -8px -8px 15px rgba(255, 255, 255, 1),
     4px 4px 15px rgba(0, 0, 0, 0.1);
   color: #254c5f;
@@ -1023,54 +1018,193 @@ footer {
 
 
 @media only screen 
-and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
-and (orientation : portrait) {
-  .Parallax {
-    min-height: 200vh;
+and (orientation : portrait)
+
+{
+  .tag_line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100vw;
+   }
+
+    .tag_line p:nth-child(1), .tag_line p:nth-child(2) {
+      font-size: 14vw;
+     
   }
-  .Parallax .title {
-    font-size: 2em;
+  .tag_line p:nth-child(3){
+    display: none;
   }
-  .Parallax .container {
-    grid-template-columns: repeat(auto-fit, minmax(750px, 980px));
-    grid-template-rows: minmax(auto, auto);
-  }
-  .timeline{
-    width: 100%;
-   
-  }
-  .Parallax .container .box {
-    grid-column: unset !important;
-    grid-row: unset !important;
-    
-  }
+ .main_buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main_buttons a:nth-child(1){
+  margin-top: 8vh;
+}
+.main_buttons a {
+  margin: 4vh 2vw;
+ 
+  font-size: 3vw;
+ 
+}
+/* title section */
+.About .title span:after{
+  
+  width: 33vw;
+  right:  -33vw;
+
+}
+.About .title span:before{
+
+width: 33vw;
+left:  -33vw;
+
 }
 
+.motto .title span:after {
+width: 22vw;
+right: -22vw;
+}
 
+.motto .title span:before {
+width: 22vw;
+left: -22vw;
+}
 
-
-@media (max-width: 767px) {
-  .Parallax .container {
-    grid-template-columns: repeat(auto-fit, minmax(50%, 760px));
-    grid-template-rows: minmax(auto, auto);
+.Parallax .title span:after {
+width: 17vw;
+right: -17vw;
+}
+.Parallax .title span:before {
+  width: 17vw;
+  left: -17vw;
   }
-  .timeline{
+  
+  .Experience .title span:after {
+    width: 13.5vw;
+    right: -13.5vw;
+}
+.Experience .title span:before {
+  width: 13.5vw;
+  left: -13.5vw;
+}
+
+  .profile-content {
+
+    grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
+    grid-template-rows: minmax(auto, auto);
+    grid-auto-flow:dense;
+    margin: 0;
+  }
+  .profile .role {
+    font-size: 1.8em;
+  }
+  .profile-content .long,.profile-content .short  {
+    grid-column: unset !important;
+    grid-row: unset !important;
+    margin: 2em;
+  }
+  .profile-content ul{
+    text-align: start;
+    margin-left: 25vw;
+  }
+  .profile-content li{
+    margin: 0.5vh 8vw;
+
+  }
+  .profile-content .main_buttons {
+    margin: 0;
+    text-align: center;
+  }
+
+  .motto-container {
+ 
+   font-size: 3rem;
+    width: 90%;
+  
+  }
+  .motto-container blockquote {
+   top: 0;
+   left: 0;
     width: 100%;
-   
+    height: 100%;
+}
+.motto-container blockquote p:before,.motto-container blockquote p:after {
+  z-index: -1;
+  opacity: 0.8;
+}
+.motto-container:hover {
+
+  transform:  unset;
+ 
+}
+.motto-container:hover blockquote {
+  transform:unset;
+
+
+}
+  .Parallax .container {
+    grid-template-columns: repeat(auto-fit, minmax(768px, 1024px));
+    grid-template-rows: minmax(auto, auto);
+    margin: 3em 0;
+  
   }
   .Parallax .container .box {
     grid-column: unset !important;
     grid-row: unset !important;
+    margin: 0.5em 2em;
+    border-radius: 2em;
   }
-  .timeline{
+.Parallax .content {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-flow: column wrap;
+ align-items: center;
+ justify-content: center ;
+ text-align: center;
+}
+  .Parallax .container .box .fas, .Parallax .container .box .fab{
+  flex: 1;
+  margin: unset;
+  font-size: 5em;
+  transform: unset;
+  position: unset;
+  margin-bottom:0.25em ;
+  
+  max-width: unset;
+  }
+ 
+  .Parallax .container .box ul{
+    flex: 1;
+display: flex;
+flex-flow: column wrap;
+    transform: unset;
+    position: unset;
+    text-align: unset;
+    }
+   
+   
+     
+  .Experience .timeline{
     width: 100%;
     padding-bottom: 0;
   }
-.timeline::before {
+  .Experience .timeline::before {
+    top: -20px;
   left: 20px;
+  height: calc(100% - 3em);
 }
-.timeline ul li:nth-child(odd),.timeline ul li:nth-child(even) {
+.Experience .timeline .box{
+  margin: 0.8em;
+}
+.Experience  .timeline ul li:nth-child(odd),.timeline ul li:nth-child(even) {
   width: 100%;
   text-align: left;
   padding-left:50px ;
@@ -1078,14 +1212,33 @@ and (orientation : portrait) {
 
 
 }
-.timeline ul li:nth-child(odd)::before,.timeline ul li:nth-child(even)::before {
+.Experience  .timeline ul li:nth-child(odd)::before,.timeline ul li:nth-child(even)::before {
   top: -18px;
-  left: 15px;
+  left: 15.5px;
 
 }
-.timeline ul li:nth-child(odd) .time,.timeline ul li:nth-child(even) .time {
+.Experience  .timeline ul li:nth-child(odd) .time,.timeline ul li:nth-child(even) .time {
    top: -30px;
    left: 50px;
    right:inherit;
 } 
+ 
+
+  .Experience .timeline {
+    top: 3em;
+  }
+}
+
+
+
+
+@media (max-width: 767px) {
+  *>span::before{
+    display: none;
+  }
+  .Parallax .container .box {
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+
 }
