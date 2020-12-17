@@ -1090,7 +1090,7 @@ right: -17vw;
 
   .profile-content {
 
-    grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(768px, 1024px));
     grid-template-rows: minmax(auto, auto);
     grid-auto-flow:dense;
     margin: 0;
@@ -1287,7 +1287,7 @@ margin-left: 1.5em;
   }
  
   .profile-content ,.Parallax .container{
-    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(200px, 768px));
     font-size: 0.85em;
   }
   .profile-content .long, .profile-content .short {
