@@ -221,7 +221,7 @@ nav {
 
 
 .main_buttons a {
-  margin: 6vh 2vw;
+  margin: 6vh 4vw;
   display: inline-block;
   height: 3.5em;
   width: 10em;
@@ -667,14 +667,14 @@ justify-content: center;
   transition: 0.5s;
   color: #1a323f;
 }
-.fa {
+.motto-container .fa {
   width: 8rem;
   height: 8rem;
   background: #cfe8ef;
   color: #254c5f;
   text-align: center;
-  line-height: 8rem !important;
-  font-size: 4rem !important;
+  line-height: 8rem ;
+  font-size: 4rem ;
 }
 .fa.fa1 {
   position: absolute;
@@ -1036,21 +1036,14 @@ and (orientation : portrait)
      
   }
   .tag_line p:nth-child(3){
-    display: none;
+   font-size: 5vw;
+   line-height: 3.5em;
   }
- .main_buttons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.main_buttons a:nth-child(1){
-  margin-top: 8vh;
-}
+
 .main_buttons a {
-  margin: 4vh 2vw;
+  margin: 4vh 6vw;
  
-  font-size: 3vw;
+  font-size: 2.5vw;
  
 }
 /* title section */
@@ -1109,17 +1102,20 @@ right: -17vw;
     grid-column: unset !important;
     grid-row: unset !important;
     margin: 2em;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    text-align: center;
   }
   .profile-content ul{
     text-align: start;
-    margin-left: 25vw;
+   
+    margin-right: auto;
+    margin-left: auto;
   }
-  .profile-content li{
-    margin: 0.5vh 8vw;
-
-  }
+  
   .profile-content .main_buttons {
-    margin: 0;
+    margin: 2vh;
     text-align: center;
   }
 
@@ -1232,13 +1228,115 @@ flex-flow: column wrap;
 
 
 
-@media (max-width: 767px) {
-  *>span::before{
+@media only screen and (max-device-width: 767px) and (orientation: portrait)
+ {
+   .title {position: relative;
+}
+   .title span{
+     font-size: 2rem;
+     color: transparent;
+    background: linear-gradient( 0deg, #254c5f 0% 50% , #254c5f6c 50% 100%);
+	  -webkit-background-clip: text;
+   }
+  .title span::after,.title span::before{
     display: none;
   }
-  .Parallax .container .box {
-    grid-column: unset !important;
-    grid-row: unset !important;
+  .title::before {
+    content: "";
+ 
+  margin: 0 auto;
+  position: absolute;
+  border-top: 4px solid #254c5f;
+  top: 65%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.4;
+  
+  }
+  
+  .title span {
+    padding: 0 15px;
   }
 
+
+  .About .image {
+    max-height: 20em;
+  }
+  .About .image img {
+    width: 80%;
+   
+  }
+  .profile .role{
+    font-size: 1em;
+    opacity: 0.95;
+    line-height: 1.2em;
+  }
+  .profile-content ul{
+margin-left: 1.5em;
+
+
+  }
+  .profile-content li{
+    margin: 0.5vh 22vw;
+  }
+  .profile-content .Know_More_btn {
+    margin-top:4vh !important;
+    font-size: 4vw;
+  }
+ 
+  .profile-content ,.Parallax .container{
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    font-size: 0.85em;
+  }
+  .profile-content .long, .profile-content .short {
+    margin:1em;
+  }
+  .motto-container {
+    height: 60%;
+    font-size: 6vw;
+  }
+  .motto-container:before,.motto-container:after{
+    border:0.5rem solid #254c5f;
+  }
+ .motto-container .fa {
+   width: 4rem;
+   height: 4rem;
+   line-height: 4rem;
+   font-size: 2rem;
+ }
+  /* .Parallax .container .box {
+    grid-column: unset !important;
+    grid-row: unset !important;
+  } */
+  .Parallax .container .box {
+    margin:0.5em 0.5em ;
+  }
+  .Parallax .container .box .fas, .Parallax .container .box .fab {
+    font-size: 3.5em;
+  }
+  .Parallax .container .box ul {
+    font-size: 6vw;
+  }
+  .Experience .timeline ul li:nth-child(odd), .timeline ul li:nth-child(even){
+    padding-left: 25px;
+    
+  }
+  .Experience .timeline ul li:nth-child(odd) .time, .timeline ul li:nth-child(even) .time{
+    left: 35px;
+  }
+  .timeline ul li h3 {
+    font-size: 1.25em;
+    padding-left:0.5em;
+  }
+  .timeline .box{
+    font-size: 0.9em;
+    margin: unset;
+    padding: 0.6em;
+    
+  }
+  .timeline ul li {
+    padding: 1.2em 0;
+  }
 }
