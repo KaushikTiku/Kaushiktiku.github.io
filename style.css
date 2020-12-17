@@ -320,12 +320,13 @@ justify-content: center;
   text-transform: lowercase;
   text-align: center;
   font-weight: bold;
-  font-size: 3.5rem;
+  
   color: #254c5f;
 }
 
 .title span {
   position: relative;
+  font-size: 3.5rem;
 }
 .title span:before {
   content: "";
@@ -1247,7 +1248,7 @@ flex-flow: column wrap;
   margin: 0 auto;
   position: absolute;
   border-top: 4px solid #254c5f;
-  top: 65%;
+  top: 50%;
   left: 0;
   right: 0;
   bottom: 0;
