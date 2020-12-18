@@ -21,7 +21,7 @@ body {
  
 }
 main {
-  background: linear-gradient( #254c5f71 ,#efefef6c),
+  background: linear-gradient( #254c5f71 ,#efefef6c),url(./img/bg.jpg)
      no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -82,31 +82,7 @@ header {
 	display: none;
 }
 
-/* .nav-btn {
-  position: fixed;
- 
- 
-	top: 1rem;
-  right: 1rem;
 
-  
-
-  border:1rem solid #1f4456;
-  z-index: 4;
-  border-radius: 50%;
-  height: 6rem;
-	width: 6rem;
-  text-align: center;
-  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.3);
-  background-color: #1f4456;
-  animation: border-transform 7s linear infinite;
-  transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),  
-              right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
-              transform 250ms 1100ms ease,
-              width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1),
-              height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
-
-} */
 .nav-icon {
 	position: relative;
 
@@ -403,7 +379,10 @@ margin: 5% 7%;
   0% {
     content: "Autodiadactic Programmer";
   }
-  50% {
+  33% {
+    content: "Technology Enthusiast";
+  }
+  66% {
     content: "Support Analyst";
   }
   100% {
