@@ -22,7 +22,7 @@ body {
 }
 main {
   background: linear-gradient( #254c5f71 ,#efefef6c),
-    url(./img/pexels-bongkarn-thanyakij-3740254.jpg) no-repeat center center fixed;
+     no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -50,8 +50,8 @@ header {
   align-items: center;
   transform: translateZ(0) scale(1);
 }
-.headlogo,
-.nav-links {
+.headlogo
+ {
   display: flex;
   animation: tag_line 3s ease forwards;
 }
@@ -63,39 +63,231 @@ header {
   color: white;
   font-weight: 400;
   margin: 5% 7%;
-  font: normal normal normal 1.2rem hind, sans-serif;
+  font: normal normal normal 1.2rem ,'Vesterbro', sans-serif;
 }
 
-nav {
-  flex: 1;
+/* NavBar starts here */
+.nav-container {
+  position: fixed;
+  z-index: 6;
+  border-radius: 50%;
+  cursor: pointer;
+	top: 0;
+  right: 0;
+  height: 10rem;
+  width: 10rem;
 }
-.nav-links {
-  justify-content: space-evenly;
-  list-style: none;
+
+.nav-checkbox {
+	display: none;
+}
+
+/* .nav-btn {
+  position: fixed;
+ 
+ 
+	top: 1rem;
+  right: 1rem;
+
+  
+
+  border:1rem solid #1f4456;
+  z-index: 4;
+  border-radius: 50%;
+  height: 6rem;
+	width: 6rem;
+  text-align: center;
+  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.3);
+  background-color: #1f4456;
+  animation: border-transform 7s linear infinite;
+  transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),  
+              right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
+              transform 250ms 1100ms ease,
+              width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1),
+              height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
+
+} */
+.nav-icon {
+	position: relative;
+
+
+
+
+  z-index: 4;
+margin: 5% 7%;
+  height: 10vh;
+  width: 8vh;
+  float: right;
+	cursor: pointer;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+.burger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+  opacity: 1;
+  filter:brightness(0) saturate(100%) invert(25%) sepia(12%) saturate(2094%) hue-rotate(155deg) brightness(93%) contrast(89%);
+
+}
+
+.burger g {
+  stroke: #ffffff;
+  transition: stroke 0.25s ease-in-out;    
+}
+
+.burger g:hover {
+  stroke: darken(#ffffff, 20%);
+}
+
+
+.nav-checkbox:checked ~ label .burger {
+  opacity: 0;
+}
+
+
+.close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+  filter: invert(25%) sepia(12%) saturate(2094%) hue-rotate(155deg) brightness(93%) contrast(89%);
+
+  opacity: 0;
+}
+
+.close g:hover {
+  stroke: darken(#ffffff, 20%);
+}
+
+.close g {
+  stroke: #ffffff;
+  transition: stroke 0.25s ease-in-out;    
+}
+
+.close line {
+  transform-origin: 0%;
+}
+
+.close g {
+  transform: rotateZ(45deg);
+  transform-origin: 50%;
+}
+
+.nav-bg {
+ 	z-index: 1;
+	transition: transform .8s;
+  opacity: 0.95;
+}
+
+
+.nav-checkbox:checked  ~ label .close {
+  opacity: 1;
+}
+
+
+
+.nav {
+	height: 100vh;
+	width: 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	opacity: 0;
+	transition: all .8s;
+}
+
+.nav-list {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	list-style: none;
+	text-align: center;
+	width: 100%;
 }
 
 .nav-link {
-  color: white;
-  font: normal normal normal 1.2rem hind, sans-serif;
-  text-decoration: none;
-  position: relative;
+	display: inline-block;
 }
 
-.nav-link:before {
-  content: "";
-  width: 10%;
-  height: 0.5vh;
-  background: white;
-  position: absolute;
-  top: 110%;
-  left: 0;
-  transition: transform 0.4s ease-in;
+.nav-link:link,
+.nav-link:visited {
+	padding: 1rem 4rem;
+	margin: -.5rem;
+	font-size: 1.5rem;
+	font-weight: 900;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-image: linear-gradient(100deg, transparent 0%, transparent 50%, white 50%);
+	background-size: 220%;
+	transition: all .9s;
+	border-radius: 10px;
+}
+.nav-list li:before{
+	content:attr(data-text);
+	position:absolute;
+	font-size:100px;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	text-transform:uppercase;
+	color:#1f445633;
+	letter-spacing:200px;
+	pointer-events:none;
+	font-weight:bold;
+	opacity:0;
+	transition:.5s;
+	white-space:nowrap;
+	z-index:1;
+}
+.nav-list li:hover:before{
+  opacity:1;
+	letter-spacing:0px;
 }
 
-.nav-links-selct:hover .nav-link:before {
-  width: 50%;
-  transform: translate(100%);
+
+.nav-link:active,
+.nav-link:hover {
+	background-position: 100%;
+	color: #1f4456;
+	transform: translateX(-1rem);
 }
+
+.nav-item {
+	margin: 2rem;
+}
+
+.nav-checkbox:checked ~ .nav-bg {
+  transform: scale(80);
+  background: -webkit-linear-gradient(255deg,  rgb(31 68 86) 0%, #cfe8ef  100%);
+	background: -o-linear-gradient(255deg,  rgb(31 68 86) 0%, #cfe8ef 100%);
+  background: linear-gradient(345deg,  rgb(31 68 86) 0%, #cfe8ef 100%);
+  height: 100vh;
+  width: 100vw;
+}
+
+.nav-checkbox:checked ~ .nav {
+	opacity: 1;
+	width: 100%;
+}
+
+
+
+/* NavBar ends here */
+
 
 .tag_line {
   position: absolute;
@@ -1024,6 +1216,9 @@ and (max-device-width : 1024px)
 and (orientation : portrait)
 
 {
+  main:before{
+    display: none;
+  }
   .tag_line {
     position: absolute;
     top: 50%;
@@ -1232,9 +1427,7 @@ flex-flow: column wrap;
 
 @media only screen and (max-device-width: 767px) and (orientation: portrait)
  {
-  main:before{
-    display: none;
-  }
+  
    .title {position: relative;
 }
    .title span{

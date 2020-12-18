@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/icon.png" type="image/png">
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
   <title>Kaushik Tiku</title>
@@ -11,24 +12,48 @@
 
 <body>
   <main id="Home">
+    <div class="nav-container">
+      <input type="checkbox" class="nav-checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="nav-btn">
+        <span class="nav-icon"><svg class="burger" width="86" height="60" viewbox="0 0 150 150">
+          <g stroke-width="12">   
+              <line x1="6" y1="6" x2="80" y2="6"></line>
+              <line x1="6" y1="28" x2="80" y2="28"></line>
+              <line x1="6" y1="50" x2="80" y2="50"> </line>
+          </g>
+      </svg>
+      <svg class="close" width="86" height="60" viewbox="0 0 150 150">
+          <g stroke-width="12">   
+              <line x1="42" y1="6" x2="42" y2="80"></line>
+              <line x1="6" y1="42" x2="80" y2="42"></line>
+          </g>
+      </svg></span>
+      </label>
+      <div class="nav-bg">&nbsp;</div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li data-text='Home' class="nav-item" >
+            <a class="nav-link" href="#Home">Home</a>
+          </li>
+          <li data-text='About' class="nav-item" >
+            <a  class="nav-link" href="#About_id">About</a>
+          </li>
+          <li data-text='Motto' class="nav-item">
+           <a  class="nav-link" href="#motto_id">Motto</a>
+          </li>
+          <li data-text='Knowledge' class="nav-item" >
+           <a  class="nav-link" href="#Knowledge">Knowledge</a>
+          </li>
+          <li data-text='Experience'class="nav-item" >
+            <a class="nav-link" href="#Experience_id">Experience</a>
+          </li>
+      </ul>
+      </nav>
+    </div>
     <header>
       <div class="headlogo">
         <h4 class="headlogoT">Kaushik Tiku</h4>
       </div>
-      <nav class="nav-links">
-        <li class="nav-links-selct">
-          <a class="nav-link" href="#About_id">About</a>
-        </li>
-        <li class="nav-links-selct">
-          <a class="nav-link" href="#motto_id">Motto</a>
-        </li>
-        <li class="nav-links-selct">
-          <a class="nav-link" href="#Knowledge">Knowledge</a>
-        </li>
-        <li class="nav-links-selct">
-          <a class="nav-link" href="#Experience_id">Experience</a>
-        </li>
-      </nav>
     </header>
     <div class="tag_line">
       <div class="tag_line_intro">
@@ -36,6 +61,7 @@
           <p><span>Hello</span>,I'm<br /></p>
           <p>Kaushik Tiku.</p>
           <p><span class="move_vertical"></span></p>
+          <div class="line"></div>
         </div>
       </div>
       <div class="main_buttons">
@@ -71,7 +97,7 @@
             get to know any scripting language there are endless possibilities and you just can't get enough <br>
             <br>You look for ways to do more in less time and that is what I have done or atleast tried to in any
             possible way to whatever extent my job allowed me to. Throughout my years of experience I have stuck with
-            this motto and it has helped me and I hope it help's you the same way.
+            this motto and it has helped me and I hope it helps you the same way.
           </p>
         </div>
         <div class="short">
