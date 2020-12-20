@@ -743,7 +743,7 @@ header {
   margin-left: auto;
   margin-right: auto;
 
-  max-width: 30em;
+  width: 30em;
   height: 30em;
 }
 .About .image img {
@@ -1184,7 +1184,7 @@ h2 {
 
 .Parallax .container .box .fas,
 .Parallax .container .box .fab {
-  max-width: 100px;
+  width: 100px;
   margin-bottom: 0.5em;
   font-size: 4.5em;
 }
@@ -1657,7 +1657,7 @@ footer {
     position: unset;
     margin-bottom: 0.25em;
 
-    max-width: unset;
+    width: unset;
   }
 
   .Parallax .container .box ul {
@@ -1750,7 +1750,7 @@ footer {
   }
 
   .About .image {
-    max-height: 20em;
+    height: 20em;
   }
   .About .image img {
     width: 80%;
