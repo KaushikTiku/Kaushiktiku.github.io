@@ -1143,7 +1143,7 @@ h2 {
 
           flex-direction: column;
   position: relative;
-  max-width: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24vw, 1fr));
   grid-template-rows: minmax(4vh, auto);
