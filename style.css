@@ -30,7 +30,7 @@ main {
   background-size: cover;
 
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   scroll-snap-align: center;
   position: relative;
 }
@@ -840,7 +840,7 @@ h2 {
 .profile-content .Know_More_btn {
   width: 8em;
 
-  margin: 0 0 3em 1em;
+  margin: 1em 0;
 }
 
 /* about me section ends here */
@@ -1152,7 +1152,7 @@ h2 {
   grid-gap: 0.8vw;
 
   margin-bottom: 1em;
-  min-height: 89vh;
+  height: 89vh;
 }
 
 .Parallax .container .box {
@@ -1618,7 +1618,7 @@ footer {
   .Parallax .container {
     grid-template-columns: repeat(auto-fit, minmax(768px, 1024px));
     grid-template-rows: minmax(auto, auto);
-    margin: 3em 0;
+    margin: 1em 0;
   }
   .Parallax .container .box {
     grid-column: unset !important;
@@ -1760,21 +1760,15 @@ footer {
     opacity: 0.95;
     line-height: 1.2em;
   }
-  .profile-content ul {
-    margin-left: 1.5em;
-  }
-  .profile-content li {
-    margin: 0.5vh 22vw;
-  }
+ 
   .profile-content .Know_More_btn {
-    margin-top: 4vh !important;
     font-size: 4vw;
   }
 
   .profile-content,
   .Parallax .container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 768px));
-    font-size: 0.85em;
+    font-size: 1em;
   }
   .profile-content .long,
   .profile-content .short {
@@ -1806,7 +1800,7 @@ footer {
     font-size: 3.5em;
   }
   .Parallax .container .box ul {
-    font-size: 6vw;
+    font-size: 1.25rem;
   }
   .Experience .timeline ul li:nth-child(odd),
   .timeline ul li:nth-child(even) {
