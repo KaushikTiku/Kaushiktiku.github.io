@@ -738,19 +738,15 @@ header {
   line-height: 1.2em;
 }
 
-.About .image {
-  display: block;
+
+.About img {
+  border-radius: 50%;
+
   margin-left: auto;
   margin-right: auto;
 
   width: 30em;
   height: 30em;
-}
-.About .image img {
-  border-radius: 50%;
-
-  width: 100%;
-  height: 100%;
   display: inline-block;
   background-size: cover;
   background-position: center;
@@ -1749,11 +1745,10 @@ footer {
     padding: 0 15px;
   }
 
-  .About .image {
-    height: 20em;
-  }
-  .About .image img {
+ 
+  .About  img {
     width: 80%;
+    height: 20em;
   }
   .profile .role {
     font-size: 1em;
